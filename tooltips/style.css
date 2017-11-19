@@ -1,0 +1,21 @@
+a {
+    flex:1;
+    transition:background-color, 150ms ease-in-out; 
+    border-color, 150ms ease-in-out;
+    background-color:#e8e8e8;
+    border-bottom:4px solid #bebdbd;
+    color:#919191;
+    text-align:center;
+    padding:20px;
+    text-transform:uppercase;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    border-right:1px solid #DADADA;
+
+  }
+
+
+

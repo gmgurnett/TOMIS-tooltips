@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tooltip</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<style type="text/css">.tk-brandon-grotesque{font-family:"brandon-grotesque",sans-serif;}</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://use.fontawesome.com/af8ba7f2e6.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">.container-fluid {
+		display:flex;
+	}
+	</style>
+	
+</head>
+<body>
+
+<div class= "container-fluid">
+	<a class = "vitalsigns" href = "#">
+		<i class="fa fa-heartbeat" style="font-size: 25px; vertical-align: middle; margin-right: 5px;">
+		</i>
+		<p>Vital Signs</p>
+	</a>
+
+	<a class="conversion" href = "#">
+		<i class="fa fa-money" style="font-size: 25px; vertical-align: middle; margin-right: 5px;">
+		</i>
+		<p>Conversions</p>
+	</a>	
+	
+	<a class="analytics" href = "#">
+		<i class="fa fa-bar-chart" style="font-size: 25px; vertical-align: middle; margin-right: 5px;">	
+		</i>
+		<p>Website Analytics</p>
+	</a>
+
+	<a class="paid" href = "#">
+		<i class="fa fa-id-card-o" style="font-size: 25px; vertical-align: middle; margin-right: 5px;">
+		</i>
+		<p>Paid Advertising</p>
+	</a>
+
+	<a class="seo" href = "#">
+		<i class="fa fa-exchange fa-rotate-90" style="font-size: 25px; vertical-align: middle; margin-right: 5px;">	
+		</i>
+		<p>SEO</p>
+	</a>
+
+	<a class="emailsocial" href = "#">
+		<i class="fa fa-comments-o" style="font-size: 25px; vertical-align: middle; margin-right: 5px;">	
+		</i>
+		<p>Email / Social</p>
+	</a>	
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+
+	/* Un-comment the following for tooltip pop-up functionality */
+
+    /*$('.vitalsigns').tooltip({title: "Overall health.", animation: true, placement: "auto"});
+    $('.conversion').tooltip({title: "A deeper look into who, when, and where.", animation: true, placement: "auto"});
+    $('.analytics').tooltip({title: "Got mobile? Find out here!", animation: true, placement: "auto"});
+    $('.paid').tooltip({title: "Coming soon!", animation: true, placement: "auto"});  
+    $('.seo').tooltip({title: "Search engine optimization to place you at the top", animation: true, placement: "auto"});
+    $('.emailsocial').tooltip({title: "Check in with your community.", animation: true, placement: "auto"});*/
+
+    /* Hover functionality containing more condensed tips*/
+    
+    $(".vitalsigns p").hover(function(){
+        $(this).html("overall health");
+        }, function(){
+        $(this).html("Vital Signs");
+    });
+
+    $(".conversion p").hover(function(){
+        $(this).html("Understand your users");
+        }, function(){
+        $(this).html("Conversions");
+    }); 
+
+    $(".analytics p").hover(function(){
+        $(this).html("Got mobile?");
+        }, function(){
+        $(this).html("Analytics");
+    });
+
+    $(".paid p").hover(function(){
+        $(this).html("Coming Soon!");
+        }, function(){
+        $(this).html("Paid Advertising");
+    });
+
+    $(".seo p").hover(function(){
+        $(this).html("Rank and Compare");
+        }, function(){
+        $(this).html("SEO");
+    });
+
+    $(".emailsocial p").hover(function(){
+        $(this).html("Community check-in");
+        }, function(){
+        $(this).html("Email / Social");
+    });
+
+});
+</script>
+
+</body>
+</html>
